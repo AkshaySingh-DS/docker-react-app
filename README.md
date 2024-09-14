@@ -1,6 +1,6 @@
 # docker-react-app
 
-In this repository i have depployed the react application in two ways:-
+In this repository i have deployed the react application in two ways:-
 
 1) Using simple Docker (dierctory **docker-react-nodejs-postgres**)
 2) Using Docker compose (directory **docker-compose-react-nodejs-postgres**)
