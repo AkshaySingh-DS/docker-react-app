@@ -1,0 +1,40 @@
+Postgres Service:-
+
+docker run -d \
+  --name database \
+  --network my-network \
+  -e POSTGRES_USER=john_doe \
+  -e POSTGRES_PASSWORD=john.doe \
+  -e POSTGRES_DB=docker_test_db \
+  -p 5431:5432 \
+  -v ./docker_test_db:/var/lib/postgresql/data \
+  postgres-custom
+
+Server serverervice:-
+
+docker run -d \
+  --network my-network \
+  --name server \
+  -p 7999:8000 \
+  -e DATABASE_URL="postgresql://john_doe:john.doe@database:5432/docker_test_db?schema=public" \
+  -e SERVER_PORT=8000 \
+  my-server
+
+docker run -d \
+  --network my-network \
+  --name server \
+  -p 7999:8000 \
+  node-server
+
+Client Service:-
+
+docker run -d \
+  --network my-network \
+  --name client \
+  -p 4172:4173 \
+  react-client
+
+  ============================================================== TODO ===================================
+  1. Distroless Image 
+  2. Node server env variavble acceptance at run time
+  3. How to avoid the secrets in .env file using docker comopose
