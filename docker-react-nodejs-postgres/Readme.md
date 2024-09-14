@@ -229,4 +229,8 @@ That's all! That should get the project up and running. To see the output, you c
 Application looks something like below:-
 
 
+<img width="1435" alt="Screenshot 2024-09-14 at 5 55 28 PM" src="https://github.com/user-attachments/assets/a989b505-669e-4ef6-af81-e6500105b8fe">
+
+
+
 This tutorial provides a basic understanding of using Docker to manage a full-stack application. Explore the code for further details.
