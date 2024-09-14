@@ -226,4 +226,7 @@ docker run -d \
 That's all! That should get the project up and running. To see the output, you can access `http://127.0.0.1:4172` from the browser and you should find a web page with a list of users. This entire system with the client, server & database are running inside of docker and being accessible from your machine.
 
 
+Application looks something like below:-
+
+
 This tutorial provides a basic understanding of using Docker to manage a full-stack application. Explore the code for further details.
