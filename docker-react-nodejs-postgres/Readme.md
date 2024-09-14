@@ -12,6 +12,7 @@ To get this project up and running, follow these steps
 3. Open a terminal from the cloned project's directory
 4. Strcuture would look like below when you open the project directory
 
+```
 ├── Dockerfile
 ├── Readme.md
 ├── client
@@ -60,6 +61,7 @@ To get this project up and running, follow these steps
         │   └── database.js
         └── constants
             └── httpStatus.js
+```
 
 Here is a detailed explanation on Docker what is going on.
 
